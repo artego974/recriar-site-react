@@ -26,10 +26,10 @@ function Nav() {
       className={`fixed top-0 left-0 h-screen w-64 flex flex-col px-4 py-6 transition-colors duration-300
         ${isDark ? 'bg-neutral-800' : 'bg-neutral-100'}`}
     >
-      {/* Div 1 — Logo e Título */}
+     
       <div className="flex items-center gap-2 px-2 mb-8">
         <div className="w-8 h-8 rounded-md bg-lime-400 flex items-center justify-center font-black text-neutral-900 text-sm">
-          <img src="../../../public/logo.png" alt="logo" />
+          <img src="./logo.png" alt="logo" />
         </div>
         <span className={`text-sm font-bold tracking-widest uppercase transition-colors duration-300
           ${isDark ? 'text-white' : 'text-neutral-900'}`}>
@@ -37,7 +37,7 @@ function Nav() {
         </span>
       </div>
 
-      {/* Div 2 — Navegação principal */}
+
       <div className="flex-1 flex flex-col gap-6">
         <NavOptions options={topOptions} isDark={isDark} />
 
